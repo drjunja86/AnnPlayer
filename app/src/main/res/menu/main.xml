@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ann.player.annplayer.MainActivity" >
+
+    <item
+        android:id="@+id/action_repeat_playlist"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="@string/action_repeat_playlist"
+        android:checkable="true" />
+
+    <item
+        android:id="@+id/action_repeat_song"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="@string/action_repeat_song"
+        android:checkable="true" />
+
+    <item
+        android:id="@+id/action_shuffle"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="@string/action_shuffle"
+        android:checkable="true" />
+
+</menu>

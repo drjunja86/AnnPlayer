@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AnnPlayer</string>
+    <string name="button_up">Back to previous folder</string>
+    <string name="content_description">Here should be something!</string>
+    <string name="currently_playing">Currently playing: %s</string>
+    <string name="no_music_found">No music found</string>
+    <string name="action_repeat_playlist">Repeat playlist</string>
+    <string name="action_repeat_song">Repeat song</string>
+    <string name="action_shuffle">Shuffle</string>
+
+</resources>

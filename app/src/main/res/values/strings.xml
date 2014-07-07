@@ -9,5 +9,12 @@
     <string name="action_repeat_playlist">Repeat playlist</string>
     <string name="action_repeat_song">Repeat song</string>
     <string name="action_shuffle">Shuffle</string>
-
+    <string name="drawer_open">Open drawer</string>
+    <string name="drawer_close">Close drawer</string>
+    <string name="drawer_title">Select player mode</string>
+    <array name="drawer_list_titles">
+        <item>Folder player</item>
+        <item>My playlists</item>
+        <item>Playlist editor</item>
+    </array>
 </resources>

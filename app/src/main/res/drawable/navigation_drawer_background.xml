@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/navigation_drawer_splitter" />
+    <item
+        android:drawable="@color/navigation_drawer_background"
+        android:right="1dp" />
+</layer-list>

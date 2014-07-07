@@ -2,4 +2,6 @@
 <resources>
     <color name="app_bg_color">#222222</color>
     <color name="playing_text">#2786D1</color>
+    <color name="navigation_drawer_background">#000000</color>
+    <color name="navigation_drawer_splitter">#99FFFFFF</color>
 </resources>

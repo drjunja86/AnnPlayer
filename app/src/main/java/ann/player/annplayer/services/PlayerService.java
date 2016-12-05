@@ -316,8 +316,8 @@ public class PlayerService extends Service implements MediaPlayer.OnPreparedList
 
         Notification notification = new Notification.Builder(ctx)
                 .setContentIntent(contentIntent)
-                .setContentTitle("Playing: ")
-                .setContentText(mCurentSongTitle)
+                .setContentTitle(mCurentSongTitle)
+//                .setContentText(mCurentSongTitle)
                 .setWhen(System.currentTimeMillis())
                 .setSmallIcon(android.R.drawable.ic_media_play)
 //                .setLargeIcon(android.R.drawable.ic_media_play)

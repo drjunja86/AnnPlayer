@@ -16,6 +16,7 @@ import java.util.ArrayList;
 import ann.player.annplayer.R;
 import ann.player.annplayer.models.FolderItem;
 import ann.player.annplayer.models.Song;
+import ann.player.annplayer.utils.FontUtils;
 
 public class MainListAdapter extends BaseAdapter {
 
@@ -63,7 +64,8 @@ public class MainListAdapter extends BaseAdapter {
 		holder = (Holder) convertView.getTag();
 		FolderItem item = getItem(position);
 		if (item != null) {
-			holder.title.setText(item.isFolder?item.folderName:item.song.title);
+            FontUtils.setDefaultFontToText(holder.title);
+            holder.title.setText(item.isFolder?item.folderName:item.song.title);
 			if (position == mCurrentPos) holder.title.setSelected(true);
 			else holder.title.setSelected(false);
 			holder.title.setCompoundDrawablesWithIntrinsicBounds(activity().getResources().getDrawable(
@@ -104,8 +106,8 @@ public class MainListAdapter extends BaseAdapter {
 	            do {
 	            	FolderItem item = new FolderItem();
 	            	Song song = new Song();
-	            	song.artist = data.getString(data.getColumnIndex(MediaStore.Audio.Media.ARTIST));
-	            	song.trackName = data.getString(data.getColumnIndex(MediaStore.Audio.Media.TITLE));
+                    song.artist = data.getString(data.getColumnIndex(MediaStore.Audio.Media.ARTIST));
+                    song.trackName = data.getString(data.getColumnIndex(MediaStore.Audio.Media.TITLE));
 	            	String fineName = data.getString(data.getColumnIndex(MediaStore.Audio.Media.DISPLAY_NAME));
 	            	song.duration = data.getInt(data.getColumnIndex(MediaStore.Audio.Media.DURATION));
 	            	song.id = data.getInt(data.getColumnIndex(MediaStore.Audio.Media._ID));

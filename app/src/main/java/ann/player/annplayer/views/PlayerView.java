@@ -14,9 +14,11 @@ import java.util.concurrent.TimeUnit;
 import ann.player.annplayer.R;
 import ann.player.annplayer.interfaces.IPlayerViewListener;
 import ann.player.annplayer.models.Song;
+import ann.player.annplayer.utils.FontUtils;
 
 /**
  * Created by AP on 21/05/14.
+ *
  */
 public class PlayerView extends RelativeLayout implements View.OnClickListener, SeekBar.OnSeekBarChangeListener {
 
@@ -93,7 +95,8 @@ public class PlayerView extends RelativeLayout implements View.OnClickListener, 
     }
 
     public void setStatePlaying(Song song) {
-        mTrackTitle.setText(getResources().getString(R.string.currently_playing, song.title));
+        FontUtils.setDefaultFontToText(mTrackTitle);
+        mTrackTitle.setText(song.title);
         updateDuration(song.duration);
         updatePosition(0);
         setVisibility(VISIBLE);
